@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+   
+
+    <link rel="stylesheet" href="style.css">
+    <title>Patient Dashboard</title>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>clinic<span class="danger">++</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Patient Dashboard</h1>
+            <!-- Book an Appointment -->
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3></h3>
+                            <h1 onclick="showAppointmentForm()">Book an Appointment</h1>
+                        </div>
+                        <div class="progresss">
+                            <
+                        </div>
+                    </div>
+                    <button onclick="showAppointmentForm()"></button>
+                </div>
+                <!-- On Spot Booking -->
+                
+                <!-- Medical History -->
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3></h3>
+                            <h1 onclick="showMedicalHistory()">Your Medical History</h1>
+                            <!-- Add this within the <body> tag -->
+                            <div class="modal-container"></div>
+
+                            <div class="timeline-container" id="medicalHistoryTimeline"></div>
+                        </div>
+                        <div class="progresss">
+                            
+                        </div>
+                    </div>
+                    <button onclick="showMedicalHistory()"></button>
+                    
+                    <div id="medicalHistoryList"></div>
+                </div>
+            </div>
+            <!-- End of Analyses --><div id="medicalHistoryList"></div>
+
+            <!-- Our Doctors -->
+            <div class="new-users">
+                <h2>Our Doctors</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="images/profile-2.jpg">
+                        <h2>Karthik</h2>
+                    </div>
+                    <div class="user">
+                        <img src="images/profile-3.jpg">
+                        <h2>Amir</h2>
+                    </div>
+                    <div class="user">
+                        <img src="images/profile-4.jpg">
+                        <h2>Leena</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Our Doctors -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Right section content here -->
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    
+    <!-- Include your JavaScript file -->
+    <script src="patientapp.js"></script>
+
+<!-- Include jsPDF -->
+    
+    
+</body>
+
+</html>

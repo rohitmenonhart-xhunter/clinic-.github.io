@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Your Role</title>
+  <link rel="stylesheet" href="role-selection.css">
+</head>
+<body>
+  <h1>Select Your Role</h1>
+  <ul>
+    <li onclick="redirectToDashboard('patient')">Patient</button></li>
+    <li onclick="redirectToDashboard('doctor')">Doctor</button></li>
+  </ul>
+  
+
+  <script>
+    function redirectToDashboard(role) {
+      if (role === 'patient') {
+        window.location.href = "patientdashboard.html";
+      } else if (role === 'doctor') {
+        window.location.href = "doctordashboard.html";
+      } else {
+        console.error("Invalid role:", role);
+      }
+    }
+  </script>
+</body>
+</html>
